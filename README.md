@@ -10,4 +10,5 @@
 ### Collection of Shortest Path Algorithms 
 
 [1. Dijkstra](Dijkstra.py)<br>
-[2. Bellman_Ford](Bellman_Ford.py)<br>
+![plot](graph_1.jpg)
+[2. Bellman Ford](Bellman_Ford.py)<br>
