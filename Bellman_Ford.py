@@ -1,14 +1,13 @@
 import math
 
 def Size(edges): # NO. OF EDGES IN A GRAPH
-    max_v=-1
+    vertices=set()
     
     for i in range(0,len(edges)):
-        max_v=max(max_v,max(edges[i][0],edges[i][1]))
+        vertices.add(edges[i][0])
+        vertices.add(edges[i][1])
 
-    max_v=max_v+1
-
-    return max_v
+    return len(vertices)
 
 
 def Matrix(directed_edges): # ADJACENCY MATRIX OF A GRAPH
@@ -46,6 +45,10 @@ def Adj_List(directed_edges): # ADJACENCY LIST OF A GRAPH
         else:
             WList[edges[i][0]].append([edges[i][1],edges[i][2]])
 
+    for i in range(0,size):
+        if(i not in WList):
+            WList[i]=list()
+
     return WList
 
 
@@ -77,7 +80,7 @@ def Bellman_Ford_List(WList,s): # WList - Adjacency List
     distance[s]=0
 
 
-    for i in range(0,len(WList.keys())): # To find the presence of cycle
+    for i in WList.keys(): # To find the presence of cycle
         for j in WList.keys():
             for (v,d) in WList[j]:
                 distance[v]=min(distance[v],distance[j]+d)
@@ -86,7 +89,7 @@ def Bellman_Ford_List(WList,s): # WList - Adjacency List
                         
 
 
-if __name__=="__main__":
+if __name__=="__main__": # NOTE - POSSIBLE VERTICES = {0,1,2...}
     
     directed_edges=[(0,1,10),(0,7,8),(1,5,2),(2,1,1),(2,3,1),(3,4,3),(4,5,-1),(5,2,-2),(6,1,-4),(6,5,-1),(7,6,1)]
 
@@ -95,7 +98,6 @@ if __name__=="__main__":
     WList=Adj_List(directed_edges)
 
     src_vertex=0
-    
     
 
     print(f'BELLMAN-FORD USING ADJACENCY MATRIX\n')

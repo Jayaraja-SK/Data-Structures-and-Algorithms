@@ -1,14 +1,13 @@
 import math
 
 def Size(edges): # NO. OF EDGES IN A GRAPH
-    max_v=-1
+    vertices=set()
     
     for i in range(0,len(edges)):
-        max_v=max(max_v,max(edges[i][0],edges[i][1]))
+        vertices.add(edges[i][0])
+        vertices.add(edges[i][1])
 
-    max_v=max_v+1
-
-    return max_v
+    return len(vertices)
 
 
 def Matrix(directed_edges): # ADJACENCY MATRIX OF A GRAPH
@@ -34,7 +33,7 @@ def Matrix(directed_edges): # ADJACENCY MATRIX OF A GRAPH
 
 
 def Adj_List(directed_edges): # ADJACENCY LIST OF A GRAPH
-    edges=directed_edges+[(j,i,w) for (i,j,w) in directed_edges] # UN-DIRECTED
+    edges=directed_edges
     
     size=Size(edges)
     
@@ -45,6 +44,10 @@ def Adj_List(directed_edges): # ADJACENCY LIST OF A GRAPH
             WList[edges[i][0]]=[[edges[i][1],edges[i][2]]]
         else:
             WList[edges[i][0]].append([edges[i][1],edges[i][2]])
+
+    for i in range(0,size):
+        if(i not in WList):
+            WList[i]=list()
 
     return WList
 
@@ -119,7 +122,7 @@ def Dijkstra_List(WList,s): # DIJKSTRA USING ADJACENCY LIST
     return distance
 
 
-if __name__=="__main__":
+if __name__=="__main__": # NOTE - POSSIBLE VERTICES = {0,1,2...}
     
     directed_edges=[(0,1,10),(0,2,80),(1,2,6),(1,4,20),(2,3,70),(4,5,50),(4,6,5),(5,6,10)]
 
