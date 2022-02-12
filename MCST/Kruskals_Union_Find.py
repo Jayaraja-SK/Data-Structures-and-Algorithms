@@ -112,15 +112,15 @@ def Kruskal(WList): # WITH REDUCED COMPLEXITY USING UNION-FIND
     return TreeEdges
 
 
+if __name__=="__main__":
+    directed_edges=[(0,1,10),(0,3,18),(1,2,20),(1,3,6),(2,4,8),(3,4,70)]
 
-directed_edges=[(0,1,10),(0,3,18),(1,2,20),(1,3,6),(2,4,8),(3,4,70)]
+    WList=Adj_List(directed_edges)
 
-WList=Adj_List(directed_edges)
+    res=Kruskal(WList)
 
-res=Kruskal(WList)
+    print(f'RESULTANT MINUMUM SPANNING TREE\n')
 
-print(f'RESULTANT MINUMUM SPANNING TREE\n')
-
-for i in range(0,len(res)):
-    print(f'EDGE = {res[i][0]}-{res[i][1]}  WEIGHT = {res[i][2]}')
+    for i in range(0,len(res)):
+        print(f'EDGE = {res[i][0]}-{res[i][1]}  WEIGHT = {res[i][2]}')
 
