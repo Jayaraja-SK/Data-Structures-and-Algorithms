@@ -82,10 +82,16 @@ def Union(i,j):
     c_old=comp[i]
     c_new=comp[j]
 
-    for k in members[c_old]:
-        comp[k]=c_new
-        members[c_new].append(k)
-        size[c_new]=size[c_new]+1
+    if(size[c_new]>=size[c_old]):
+        for k in members[c_old]:
+            comp[k]=c_new
+            members[c_new].append(k)
+            size[c_new]=size[c_new]+1
+    else:
+        for k in members[c_new]:
+            comp[k]=c_old
+            members[c_old].append(k)
+            size[c_old]=size[c_old]+1
 
 
 def Kruskal(WList): # WITH REDUCED COMPLEXITY USING UNION-FIND
