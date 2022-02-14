@@ -33,7 +33,7 @@ def Matrix(directed_edges): # ADJACENCY MATRIX OF A GRAPH
 
 
 def Adj_List(directed_edges): # ADJACENCY LIST OF A GRAPH
-    edges=directed_edges
+    edges=directed_edges+[(j,i,w) for (i,j,w) in directed_edges] # UN-DIRECTED
     
     size=Size(edges)
     
