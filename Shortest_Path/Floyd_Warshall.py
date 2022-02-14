@@ -93,5 +93,5 @@ if __name__=="__main__":
     print(f'SHOREST PATH BETWEEN EVERY PAIR OF VERTICES USING FLOYD WARSHALL\n')
 
     for i in range(0,len(res)):
-        for j in range(i,len(res)):
+        for j in range(i+1,len(res)):
             print(f'{i} TO {j}  DISTANCE = {res[i][j]}')
