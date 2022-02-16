@@ -22,12 +22,15 @@
 [1. Dijkstra](Shortest_Path/Dijkstra.py)
 <br></br>
 ![alt text](res/graph_1.jpg)
+<br></br>
 [2. Bellman Ford](Shortest_Path/Bellman_Ford.py)
 <br></br>
 ![alt text](res/graph_2.jpg)
+<br></br>
 [3. Floyd Warshall](Shortest_Path/Floyd_Warshall.py)
 <br></br>
 ![alt text](res/graph_3.jpg)
+<br></br>
 
 
 ### Collection of Minimum Cost Spanning Tree (M.C.S.T.) Algorithms 
@@ -35,9 +38,11 @@
 [1. Prim's Algorithm](MCST/Prims.py)
 <br></br>
 ![alt text](res/graph_3.jpg)
+<br></br>
 [2. Kruskal's Algorithm](MCST/Kruskals.py)
 <br></br>
 ![alt text](res/graph_3.jpg)
+<br></br>
 [3. Kruskal's Algorithm using Union-Find Data Structure (Efficiency is Improved)](MCST/Kruskals_Union_Find.py)
 <br></br>
 ![alt text](res/graph_3.jpg)
