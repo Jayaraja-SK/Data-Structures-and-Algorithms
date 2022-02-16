@@ -46,3 +46,8 @@
 [3. Kruskal's Algorithm using Union-Find Data Structure (Efficiency is Improved)](MCST/Kruskals_Union_Find.py)
 <br></br>
 ![alt text](res/graph_3.jpg)
+
+
+### Instructor
+
+Prof. Madhavan Mukund, Director, Chennai Mathematical Institute
