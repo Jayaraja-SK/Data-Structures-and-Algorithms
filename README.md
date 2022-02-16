@@ -8,11 +8,11 @@
 [5. Max Heap](Data_Structures/Max_Heap.py)<br>
 [6. Binary Search Tree (BST)](Data_Structures/BST.py)<br>
 [7. Adelson Velskii Landis Tree (AVL)](Data_Structures/AVL.py)<br>
-&nbsp;&nbsp;&nbsp;a) Left Rotate<br>
-		![plot](res/left_rotate.jpg)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Left Rotate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![plot](res/left_rotate.jpg)
 		<br></br>
-	b) Right Rotate<br>
-		![plot](res/right_rotate.jpg)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ight Rotate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![plot](res/right_rotate.jpg)
 		<br></br>
 
 
