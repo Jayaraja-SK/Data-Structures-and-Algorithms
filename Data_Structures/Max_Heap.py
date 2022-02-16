@@ -6,15 +6,15 @@ class MaxHeap:
         left=2*k+1
         right=2*k+2
 
-        smallest=k
+        largest=k
 
-        if(left<len(self.arr) and self.arr[left]>self.arr[smallest]):
-            smallest=left
-        if(right<len(self.arr) and self.arr[right]>self.arr[smallest]):
-            smallest=right
-        if(smallest!=k):
-            self.arr[k],self.arr[smallest]=self.arr[smallest],self.arr[k]
-            self.Max_Heapify(smallest)
+        if(left<len(self.arr) and self.arr[left]>self.arr[largest]):
+            largest=left
+        if(right<len(self.arr) and self.arr[right]>self.arr[largest]):
+            largest=right
+        if(largest!=k):
+            self.arr[k],self.arr[largest]=self.arr[largest],self.arr[k]
+            self.Max_Heapify(largest)
             
 
     def Heapify(self,L):
