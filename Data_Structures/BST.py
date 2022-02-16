@@ -110,27 +110,6 @@ class BST:
                 self.value=self.left.Max_Value()
                 self.left.Delete(self.left.Max_Value())
 
-                
-    
-'''
-obj=BST()
-obj.Insert(1)
-obj.Insert(2)
-obj.Insert(-1)
-obj.Insert(3)
-obj.Insert(4)
-print()
-print(obj.Postorder())
-print()
-#obj.Min_Value()
-#obj.Max_Value()
-print(obj.Delete(10))
-
-print()
-obj.Inorder()
-print()
-'''
-
 
 
 if __name__=="__main__":
