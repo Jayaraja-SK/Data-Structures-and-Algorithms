@@ -12,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Left Rotate<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![plot](res/left_rotate.jpg)
 <br></br>
-&ebsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Right Rotate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Right Rotate<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![plot](res/right_rotate.jpg)
 <br></br>
 
