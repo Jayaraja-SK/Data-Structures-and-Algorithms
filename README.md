@@ -4,7 +4,9 @@
 [1. Singly Linked List](Data_Structures/Singly_Linked_List.py)<br>
 [2. Stack](Data_Structures/Stack.py)<br>
 [3. Queue](Data_Structures/Queue.py)<br>
-[4. Binary Search Tree (BST)](Data_Structures/BST.py)<br>
+[4. Min Heap](Data_Structures/Min_Heap.py)<br></br>
+[5. Max Heap](Data_Structures/Max_Heap.py)<br></br>
+[6. Binary Search Tree (BST)](Data_Structures/BST.py)<br>
 
 
 ### Collection of Traversal Algorithms
