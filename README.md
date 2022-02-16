@@ -50,4 +50,4 @@
 
 ### Instructor
 
-Prof. Madhavan Mukund, Director, Chennai Mathematical Institute
+- Prof. Madhavan Mukund, Director, Chennai Mathematical Institute
