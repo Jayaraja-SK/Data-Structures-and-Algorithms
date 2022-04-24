@@ -56,6 +56,14 @@
 ![alt text](res/graph_3.jpg)
 
 
+### Collection of some Efficient Algorithms
+
+[1. Fast Select](Algorithms/Fast_Select.py) - Used to find kth smallest/largest element in a list
+<br></br>
+[2. Fast Multiply - Karatsuba](Algorithms/Fast_Multiply.py) - Used to multiply to n-bit numbers efficiently
+<br></br>
+
+
 ### Instructor
 
 - Prof. Madhavan Mukund, Director, Chennai Mathematical Institute
